@@ -1,5 +1,4 @@
 spring:
-  data:
     elasticsearch:
-      cluster-name: ymath-elasticsearch7
-      cluster-nodes: 10.109.15.134:9200
+      rest:
+        uris: 10.109.15.134:9200

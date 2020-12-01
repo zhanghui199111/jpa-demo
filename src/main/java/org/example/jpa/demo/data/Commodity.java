@@ -1,16 +1,16 @@
 package org.example.jpa.demo.data;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+import lombok.ToString;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 import java.io.Serializable;
 
 @Data
+@ToString
 @Document(indexName = "commodity")
 public class Commodity implements Serializable {
 
-    @Id
     private String skuId;
 
     private String name;
